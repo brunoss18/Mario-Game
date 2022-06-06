@@ -39,6 +39,58 @@
   animation: clouds-animation 20s infinite linear;
 }
 
+.modal-container {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.modal-container.ativo {
+  display: block;
+}
+
+.modal {
+  background-color: rgb(250, 241, 241);
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 50px;
+  text-align: center;
+  border-radius: 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.788) 0px 5px 12px;
+}
+
+.ativo .modal {
+  animation: modal 0.3s forwards;
+}
+
+.btn {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 20px;
+  padding: 1rem;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: rgb(35, 160, 35);
+}
+
+
+
 @keyframes pipe-animation {
   from {
     right: -80px;
@@ -74,5 +126,16 @@
   }
   to {
     right: 100%;
+  }
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
 }
