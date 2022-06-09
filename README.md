@@ -3,7 +3,6 @@
 
 </h1>
 
-
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
    <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -13,7 +12,9 @@
 </p>
 
 
-
+<p align="center">
+ <img  style="width: 20%;"src="https://static.wikia.nocookie.net/anicrossbr/images/7/75/Mario.png/revision/latest?cb=20170308183230&path-prefix=pt-br" alt="">
+<p>
 
 
 
