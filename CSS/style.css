@@ -5,13 +5,15 @@
 }
 body {
   
-  background-color: black;
+  /* background-color: black; */
 }
 .game-board {
   width: 90%;
   height: 500px;
   margin: 0 auto;
-  border-bottom: calc(100vh - 500px) solid rgb(35, 160, 35);
+  margin-top: 4%;
+  margin-bottom: 4%;
+  border-bottom: 1.3rem solid rgb(35, 160, 35);
   position: relative;
   overflow: hidden;
   background: linear-gradient(#87ceeb, #e0f6ff);
@@ -86,6 +88,7 @@ body {
   margin-top: 20px;
   cursor: pointer;
   transition: 0.3s;
+  
 }
 .btn:hover {
   background-color: rgb(35, 160, 35);
@@ -139,5 +142,31 @@ body {
   to {
     opacity: 1;
     transform: translate3d(0, 0, 0);
+  }
+}
+
+
+@media (max-width:1024px) {
+  .game-board{
+      width: 70%;
+  }
+}
+
+@media (max-width: 650px){
+  .game-board{
+    width: 100%;
+    margin-top: 50%;
+  }
+  body{
+    display:flex ;
+  align-items: center;
+  align-content: center;
+  
+  }
+
+  .pipe {
+    
+   
+    animation: pipe-animation 1s infinite linear;
   }
 }
